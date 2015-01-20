@@ -19,6 +19,11 @@ echo \\end{songs} >> songlist.tex
 /usr/local/texlive/2014/bin/x86_64-linux/pdflatex textbook.tex
 /usr/local/texlive/2014/bin/x86_64-linux/pdflatex slides.tex
 mv *.pdf pdf/
+
+./makePdfCollection.sh
+
+/usr/local/texlive/2014/bin/x86_64-linux/pdflatex pdfCollection.tex
+mv *.pdf pdf/
 rm *.log
 rm *.aux
 
