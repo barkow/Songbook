@@ -3,6 +3,15 @@
 \meter{6}{8}
 \ifchorded
 {\nolyrics Intro: | \[D] \[D] | \[G]\[D] | \[D] \[D] \meter{3}{8}| \[A7] \meter{6}{8}| \[D] \[D] | \[A7] \[A7] }
+\ifdefined\isaccordeon
+\begin{center}
+\begin{lilypond}
+\relative c'' {
+  \time 6/8 \key d \major a4. fis g8 a g fis4. d4 a'8 a4. ~ \time 3/8 a4 g8 \time 6/8 fis
+}
+\end{lilypond}
+\end{center}
+\fi
 \fi
 Dä |\[D]Pitter, dä \[D]wor eines \meter{3}{8}|\[G]Daachs plötzlich \meter{6}{8}|\[D]fott, \[D] | \[A] \[A]
 e|\[D]rus us \[D]Kölle, op enem \meter{3}{8}| \[D]urahle \meter{6}{8}| \[A7]Pott, \[A7] | \[A7] \[A7]
@@ -35,4 +44,13 @@ Om | \[D]Kirmes, do \[D]hätt hä jet \meter{3}{8}| \[G]kennege\meter{6}{8}|\[D]
 | \[D]La la la \[D]la, la la | \[G]la la la \[D]la, la | \[D]la la la \[D]la la la \meter{3}{8}| \[D]la la la \meter{6}{8}| \[A7]la, \[A7] | \[A7] \[A7]
 | \[D]La la la \[D]la, la la | \[G]la la la \[D]la, la | \musicnote{riterdando}\[D]la la la \[D]la la la \meter{3}{8}| \[A7]la la la \meter{6}{8}| \[D]la \[D]
 \endchorus
+\ifdefined\isaccordeon
+\begin{center}
+\begin{lilypond}
+\relative c'' {
+  \time 6/8 \key d \major a8. b16 a8 g fis e 
+}
+\end{lilypond}
+\end{center}
+\fi
 \endsong
