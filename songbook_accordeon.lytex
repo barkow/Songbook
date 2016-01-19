@@ -1,0 +1,18 @@
+\def\isaccordeon{1}
+\newcommand{\betweenLilyPondSystem}[1]{}
+\documentclass[a4paper,DIV12]{scrartcl}
+\usepackage[chorded]{songs}
+\usepackage[utf8x]{inputenc}
+\usepackage[]{scrpage2}
+
+\pagestyle{scrheadings}
+\ihead{} \chead{\pagemark} \ohead{}
+\ifoot{} \cfoot{\tiny \today} \ofoot{}
+
+\begin{document}
+\songcolumns{1}
+\songsection{Kölsche Leedcher - Hürther Tön (Akkordeon)}
+
+\input{songlistfixed}
+
+\end{document}

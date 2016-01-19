@@ -1,4 +1,6 @@
 #!/bin/bash
+#PDFLATEXCMD=/usr/local/texlive/2014/bin/x86_64-linux/pdflatex
+PDFLATEXCMD=pdflatex
 SONGS=./songs/*.tex
 rm *.pdf
 echo \\begin{songs}{} > songlist.tex
@@ -12,17 +14,17 @@ do
 	echo \\sclearpage >> songlist.tex
 	echo \\fi >> songlist.tex
 
-	/usr/local/texlive/2014/bin/x86_64-linux/pdflatex --jobname=$texfile singlesong.tex
+	$PDFLATEXCMD --jobname=$texfile singlesong.tex
 done
 echo \\end{songs} >> songlist.tex
-/usr/local/texlive/2014/bin/x86_64-linux/pdflatex songbook.tex
-/usr/local/texlive/2014/bin/x86_64-linux/pdflatex textbook.tex
-/usr/local/texlive/2014/bin/x86_64-linux/pdflatex slides.tex
+$PDFLATEXCMD songbook.tex
+$PDFLATEXCMD textbook.tex
+$PDFLATEXCMD slides.tex
 mv *.pdf pdf/
 
 ./makePdfCollection.sh
 
-/usr/local/texlive/2014/bin/x86_64-linux/pdflatex pdfCollection.tex
+$PDFLATEXCMD pdfCollection.tex
 mv *.pdf pdf/
 rm *.log
 rm *.aux
