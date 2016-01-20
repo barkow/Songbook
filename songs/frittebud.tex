@@ -3,7 +3,7 @@
 \beginverse
 \ifchorded
 {\nolyrics Intro: | \[D] | \[A7] | \[A7] | \[D] |}
-\ifdefined\isaccordeon
+\ifdef{\isaccordeon}{
 \begin{minipage}{1.0\textwidth} 
 \begin{lilypond}
 \relative c'' {
@@ -11,7 +11,7 @@
 }
 \end{lilypond}
 \end{minipage}
-\fi
+}{}
 \fi
 \[D]Mama hät hück jar \[A]kein Lust ze koche,
 \[A]Mama will hück schön na'm \[D]Städtsche john.

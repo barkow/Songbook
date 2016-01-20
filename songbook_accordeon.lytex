@@ -4,6 +4,7 @@
 \usepackage[chorded]{songs}
 \usepackage[utf8x]{inputenc}
 \usepackage[]{scrpage2}
+\usepackage{etoolbox}
 
 \pagestyle{scrheadings}
 \ihead{} \chead{\pagemark} \ohead{}

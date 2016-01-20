@@ -31,7 +31,7 @@ Uns jeiht et \[D]jo\[G]t\[D]
 \beginverse*
 \ifchorded
 {\nolyrics Zwischenspiel: | \[D] \[D] | \[G] \[D] | \[D] \[D] | \[A] \[A] | \[D] \[G] | \[G] \[D] | \[D] \[A] | \[D] }
-\ifdefined\isaccordeon
+\ifdef{\isaccordeon}{
 \begin{minipage}{1.0\textwidth} 
 \begin{lilypond}
 \relative c'' {
@@ -39,7 +39,7 @@ Uns jeiht et \[D]jo\[G]t\[D]
 }
 \end{lilypond}
 \end{minipage}
-\fi
+}{}
 \fi
 \endverse
 \beginverse

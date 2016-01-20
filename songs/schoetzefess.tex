@@ -3,6 +3,16 @@
 \beginverse
 \ifchorded
 {\nolyrics Intro: Drums/Trumpet}
+\ifdef{\isaccordeon}{
+\begin{minipage}{1.0\textwidth} 
+\begin{lilypond}
+\relative c'' {
+  %\time 2/4 \key d \major \partial 8 a8 \repeat volta 2 { d d16 e fis8 a b4. d16 b a8 a16 a fis8 d fis4 e8 a, d d16 e fis8 a b2 ~ b2 ~ | } \alternative { { b4 r8 a, } { b'8 r8 r4} } \bar "|."
+  \time 2/4 \key d \major  \repeat volta 2 { d4 d } 
+}
+\end{lilypond}
+\end{minipage}
+}{}
 \fi
 \[D]De Stroß is jefääch un et \[G]Wedder nit \[D]schläch, Jirlande un Fähncher \[A]schmöcken d'r \[D]Wäch. 
 \[D]Om Schötzeplatz steit och et \[G]Zelt schon pa\[D]rat et jrößte un schönste, et \[A]wod nit je\[D]spart. 
