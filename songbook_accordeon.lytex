@@ -6,6 +6,7 @@
 \usepackage[]{scrpage2}
 \usepackage{etoolbox}
 
+
 \pagestyle{scrheadings}
 \ihead{} \chead{\pagemark} \ohead{}
 \ifoot{} \cfoot{\tiny \today} \ofoot{}

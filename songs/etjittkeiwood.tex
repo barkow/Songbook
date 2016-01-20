@@ -3,6 +3,15 @@
 \beginverse
 \ifchorded
 {\nolyrics Intro: 2x| \[A] | \[E] | \[Bm] | \[D] |}
+\ifdef{\isaccordeon}{
+\begin{minipage}{1.0\textwidth} 
+\begin{lilypond}
+\relative c' {
+  \key a \major \repeat volta 2 { r8 a e' cis4. cis16 d cis a r8 a e' cis4. cis16 d cis a r8 a e' cis4. cis16 d cis a r4 cis16 d cis a r8 d d cis }
+}
+\end{lilypond}
+\end{minipage}
+}{}
 {\nolyrics Intro: 1x|  \[E] |}
 \fi
 \[E]Ich ben Lokalpatriot met stolzer Bross ming Fahn schwing \[Bm/D]rud un wieß 
