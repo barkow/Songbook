@@ -18,14 +18,10 @@
 \fi
 \endverse
 \beginverse
-|\[Fm]Wenn ich Samstags Ovend eimol |\[Fm]rus jon
-|\[Fm]Laufe mir die Mädche hinger|\[C7]her
-Ich |\[C7]kann doch nit dofür dat ich su |\[C7]us sinn
-Ne |\[C7]Mischung us George Clooney un nem |\[Fm]Bär
-|\[F7]Tag und Nacht such ich die große |\[B&m]Liebe
-Selvs Ma|\[E&]rie will immer |\[A&]nur das \[C7]eine
-|\[Fm]Ich bin anders als die |\[B&m]andern
-Ich |\[G7]will noch so viel |\[C7]mehr |\[C7]
+|\[Fm]Wenn ich Samstags Ovend eimol |\[Fm]rus jon |\[Fm]Laufe mir die Mädche hinger|\[C7]her.
+Ich |\[C7]kann doch nit dofür dat ich su |\[C7]us sinn, ne |\[C7]Mischung us George Clooney un nem |\[Fm]Bär.
+|\[F7]Tag und Nacht such ich die große |\[B&m]Liebe, selvs Ma|\[E&]rie will immer |\[A&]nur das \[C7]eine.
+|\[Fm]Ich bin anders als die |\[B&m]andern. Ich |\[G7]will noch so viel |\[C7]mehr. |\[C7]
 \endverse
 \beginchorus
 Leev Ma|\[Fm]rie, ich |\[F7]bin kein Mann für |\[B&m]eine Nacht | \[B&m]
@@ -51,14 +47,21 @@ Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[C7]
 \fi
 \endverse
 \beginverse
-Wat |\[Fm]hann se mir nit alles schun ver|\[Fm]sproche
-|\[Fm]Doch beim Fröhstück soß ich dann al|\[C7]lein
-|\[C7]Wie oft hann se mir et Hätz je|\[C7]broche
-Veel zu |\[C7]oft fiehl ich dropp |\[Fm]ren
-Mein |\[F7]Körper ist mir da für viel zu |\[B&m]schade
-Nein ich |\[E&]lasse mich nicht |\[A&]mehr be\[C7]nutzen
-Ich |\[Fm]kann sie nicht mehr hören diese |\[B&m]frage
-Jon mer zu |\[G7]dir oder zu |\[C7]mir |\[C7]
+Wat |\[Fm]hann se mir nit alles schun ver|\[Fm]sproche, |\[Fm]doch beim Fröhstück soß ich dann al|\[C7]lein.
+|\[C7]Wie oft hann se mir et Hätz je|\[C7]broche, veel zu |\[C7]oft fiehl ich dropp |\[Fm]ren.
+\ifchorded
+\ifdef{\isaccordeon}{
+\begin{minipage}{1.0\textwidth} 
+\begin{lilypond}
+\relative c'' {
+  \time 4/4 \key f \minor f16 e ees d des c b bes
+}
+\end{lilypond}
+\end{minipage}
+}{}
+\fi
+Mein |\[F7]Körper ist mir da für viel zu |\[B&m]schade. Nein ich |\[E&]lasse mich nicht |\[A&]mehr be\[C7]nutzen.
+Ich |\[Fm]kann sie nicht mehr hören diese |\[B&m]Frage: Jon mer zu |\[G7]dir oder zu |\[C7]mir? |\[C7]
 \endverse
 \beginchorus
 Leev Ma|\[Fm]rie, ich |\[F7]bin kein Mann für |\[B&m]eine Nacht | \[B&m]
@@ -66,20 +69,37 @@ Leev Ma|\[E&]rie, das |\[E&]habe \[E&7]ich noch |\[A&]nie gemacht |\[C7]
 Leev Ma|\[Fm]rie, es |\[F7]muß die wahre |\[B&m]Liebe sein | \[B&m]
 Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[C7]
 \endchorus 
-\beginverse
-La la la la la la la la la la la la,
-La la la la la la la la la la la la 
+\beginverse*
+|\[Fm]La la la ... | \[B&m] | \[E&] | \[A&] \[C7] | \[Fm] | \[B&m] | \[Fm] \[C7] | \[Fm]
+    | \[Fm] | \[B&m] | \[E&] | \[A&] \[C7] | \[Fm] | \[B&m] | \[G7] | \[C7] | \[-]
+\ifchorded
+\ifdef{\isaccordeon}{
+\begin{minipage}{1.0\textwidth} 
+\begin{lilypond}
+<<
+\chords{\time 4/4 \key f \minor f1:m bes1:m ees1 aes2 c2:7 f1:m bes1:m f2:m c2:7 f1:m
+    f1:m bes1:m ees1 aes2 c2:7 f1:m bes1:m g1:7 c1:7
+}
+\relative c' {
+  \time 4/4 \key f \minor f4. g8 aes f g aes c4 bes4. bes8 bes8 aes8 g4 g4 aes4 bes des c b c f,4. g8 aes f g aes c4 bes4. des8 c bes aes4 aes g g f2 r2
+  f4. g8 aes f g aes c4 bes4. bes8 bes8 aes8 g4 g4 aes4 bes des c b c f,4. g8 aes f g aes c4 bes4 r bes4 aes g f aes c2 r2
+}
+>>
+\end{lilypond}
+\end{minipage}
+}{}
+\fi
 \endverse
 \beginchorus
-Leev Ma|\[Fm]rie, ich |\[F7]bin kein Mann für |\[B&m]eine Nacht | \[B&m]
+Leev Ma|\[-]rie, ich |\[F7]bin kein Mann für |\[B&m]eine Nacht | \[B&m]
 Leev Ma|\[E&]rie, das |\[E&]habe \[E&7]ich noch |\[A&]nie gemacht |\[C7]
 Leev Ma|\[Fm]rie, es |\[F7]muß die wahre |\[B&m]Liebe sein | \[B&m]
-Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[C7]
-Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[C7]
-Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[C7]
+Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[Fm]
+Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[Fm]
+Für eine |\[Fm]Nacht bleib ich |\[C7]lieber al|\[Fm]lein | \[Fm]
 \endchorus 
-\beginverse
-La la la la la la la la la la la la,
-La la la la la la la la la la la la 
+\beginverse*
+\ifchorded
+{\nolyrics Ggf La la la}
 \endverse
 \endsong
