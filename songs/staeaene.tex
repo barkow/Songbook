@@ -3,6 +3,19 @@
 \meter{4}{4}
 \ifchorded
 {\nolyrics Intro: | \[G] | \[C] | \[G] | \[C9] |}
+\ifdef{\isaccordeon}{
+\begin{minipage}{1.0\textwidth} 
+\begin{lilypond}
+<<
+\chords{\time 4/4 \key g \major r1 g1 c1 g1 c1:9
+}
+\relative c' {
+  \time 4/4 \key g \major r2 r8 d g a b2. a8. b32 a g2. e4 d1 ~ d1
+}
+>>
+\end{lilypond}
+\end{minipage}
+}{}
 \fi
 Die janze |\[G]Welt \[D] han ich je|\[C]sinn. \[G] Ich wullt nur |\[C]weg, woanders |\[D]hin.
 Ich wor |\[C]jung, hatt winnich Jeld,|\[Em] \[G] ich wullt wo|\[Am]hin, wo et mir je|\[D]fällt.
@@ -26,6 +39,19 @@ Jo dann |\[C]weiß ich, dat ich do|\[Em]heim bin, \[G] jo do|\[Am]heim bin, he a
 \beginverse
 \ifchorded
 {\nolyrics Interlude: | \[G] | \[C] }
+\ifdef{\isaccordeon}{
+\begin{minipage}{1.0\textwidth} 
+\begin{lilypond}
+<<
+\chords{\time 4/4 \key g \major g1 g1 c1
+}
+\relative c' {
+  \time 4/4 \key g \major r2 r8 d g a b2. a8. b32 a g2. r4
+}
+>>
+\end{lilypond}
+\end{minipage}
+}{}
 \fi
 Usjewan|\[G]dert \[D] un wegje|\[C]trokke, \[G] Minsche |\[C]jon un Minsche |\[D]kumme.
 E Stöck vum |\[C]Hätz bliev för immer hee,|\[Em] \[G] doch dat |\[Am]merkste eets peu à |\[D]peu.
