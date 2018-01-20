@@ -6,7 +6,7 @@ LILYPONDOUTDIR = lilypond
 SONGS := $(wildcard songs/*.tex)
 SONGPDFS := $(addprefix $(PDFDIR)/,$(notdir $(SONGS:.tex=.pdf)))
 
-.PHONY: all songbook clean singlesongs songbook_accordeon
+.PHONY: all songbook clean singlesongs songbook_accordeon textbookmissing
 
 clean:
 	rm -f *.pdf
@@ -17,7 +17,19 @@ clean:
 	rm -f songs/*.log
 	rm -f -r $(filter-out $(LILYPONDOUTDIR)/Makefile,$(wildcard $(LILYPONDOUTDIR)/*))
 
-all: songbook singlesongs songbook_accordeon
+all: songbook singlesongs songbook_accordeon textbookmissing
+
+textbookmissing: $(PDFDIR)/textbookmissing.pdf
+
+$(PDFDIR)/textbookmissing.pdf: textbookmissing.tex songlistmissing.tex $(SONGS)
+	$(PDFLATEXCMD) textbookmissing.tex
+	mv textbookmissing.pdf $(PDFDIR)/textbookmissing.pdf
+
+textbook: $(PDFDIR)/textbook.pdf
+
+$(PDFDIR)/textbook.pdf: textbook.tex songlistfixed.tex $(SONGS)
+	$(PDFLATEXCMD) textbook.tex
+	mv textbook.pdf $(PDFDIR)/textbook.pdf
 
 songbook: $(PDFDIR)/songbook.pdf
 
