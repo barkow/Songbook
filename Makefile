@@ -55,9 +55,10 @@ $(PDFDIR)/%.pdf: songs/%.tex singlesong.tex
 singlesongsaccordeon: $(SONGPDFSACCORDEON)
 
 $(PDFDIR)/%_accordeon.pdf: songs/%.tex singlesongaccordeon.lytex
-	$(shell cat singlesongaccordeon.lytex | sed -e 's/\\jobname/songs\/frittebud.tex/g' > $(basename $<)_accordeon.lytex)
+	$(shell cat singlesongaccordeon.lytex | sed -e 's/\\jobname/songs\/$(notdir $(basename $<)).tex/g' > $(basename $<)_accordeon.lytex)
 	$(LILYPONDBOOKCMD) --output=$(LILYPONDOUTDIR) $(basename $<)_accordeon.lytex
 	#cp singlesongaccordeon.lytex $(LILYPONDOUTDIR)/singlesongaccordeon.tex
 	make --ignore-errors --keep-going --directory=$(LILYPONDOUTDIR) $(notdir $@)
 	mv $(LILYPONDOUTDIR)/$(notdir $@) $@
+	rm $(basename $<)_accordeon.lytex
 

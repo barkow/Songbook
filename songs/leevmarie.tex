@@ -24,6 +24,21 @@ Ich |\[C7]kann doch nit dofür dat ich su |\[C7]us sinn, ne |\[C7]Mischung us Ge
 |\[Fm]Ich bin anders als die |\[B&m]andern. Ich |\[G7]will noch so viel |\[C7]mehr. |\[C7]
 \endverse
 \beginchorus
+\ifchorded
+\ifdef{\isaccordeon}{
+\begin{minipage}{1.0\textwidth} 
+\begin{lilypond}
+<<
+\chords{\time 4/4 \key f \minor f1:m f1:m f1:7 bes1:m bes1:m ees1 ees2 ees2:7 aes1 c1:7 f1:m f1:7 bes1:m bes1:m f1:m c1:7 f1:m c1:7
+}
+\relative c'' {
+  \time 4/4 \key f \minor r2 c4 bes c2. f,4 f a c ees ees4. des8 des2 r2 bes4 aes bes2. es,4 es g bes des des4. c8 c2 r2 c4 bes c2. f,4 f a c ees ees4. des8 des2 r4 des c bes c2 bes4 aes bes2 aes4 g f1 r1 
+}
+>>
+\end{lilypond}
+\end{minipage}
+}{}
+\fi
 Leev Ma|\[Fm]rie, ich |\[F7]bin kein Mann für |\[B&m]eine Nacht | \[B&m]
 Leev Ma|\[E&]rie, das |\[E&]habe \[E&7]ich noch |\[A&]nie gemacht |\[C7]
 Leev Ma|\[Fm]rie, es |\[F7]muß die wahre |\[B&m]Liebe sein | \[B&m]
