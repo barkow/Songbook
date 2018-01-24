@@ -1,0 +1,23 @@
+\def\isaccordeon{1}
+\newcommand{\betweenLilyPondSystem}[1]{}
+\documentclass[a4paper,DIV12]{scrartcl}
+
+\usepackage[chorded]{songs}
+\usepackage[utf8x]{inputenc}
+\usepackage[]{scrpage2}
+\usepackage{etoolbox}
+
+\pagestyle{scrheadings}
+\ihead{} \chead{\pagemark} \ohead{}
+\ifoot{} \cfoot{\tiny \today} \ofoot{}
+
+\begin{document}
+\songcolumns{1}
+
+\begin{songs}{}
+\input{\jobname}
+\end{songs}
+
+
+\end{document}
+

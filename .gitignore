@@ -2,3 +2,4 @@
 *.log
 !lilypond/Makefile
 lilypond/*
+songs/*_accordeon.lytex
